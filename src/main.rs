@@ -4,7 +4,7 @@ use std::fmt;
 
 
 // A broken line is "yin" and a solid line is "yang"; lines may be either static (young) or moving (old)
-#[derive(Debug)]
+#[derive(Debug, Clone, Copy)]
 enum Line {
     ChangingYin, //6
     StaticYang, //7
@@ -21,7 +21,8 @@ enum Aspect {
 
 impl Line {
     fn generate(rng: &mut impl rand::Rng) -> Self {
-        //flip four coins. heads are worth 3 and tails 2. sum the numbers
+        //flip three coins. heads are worth 3 and tails 2. sum the numbers
+
         // there's some fancy syntax here that I should get used to
 
         /* 
@@ -51,6 +52,17 @@ impl Line {
         }
     }
 
+    fn is_changing(&self) -> bool {
+        matches!(self, Line::ChangingYang | Line::ChangingYin)
+    }
+
+    fn change_line(&self) -> Line {
+        match self {
+            Line::ChangingYang => Line::StaticYin,
+            Line::ChangingYin  => Line::StaticYang,
+            other => *other
+        }
+    }
 
     #[allow(dead_code)]
     fn get_aspect(&self) -> Aspect {
@@ -77,27 +89,92 @@ impl fmt::Display for Line {
 
 
 #[derive(Debug)]
+struct Hexagram
+{
+    /// Lines are stored in the order generated, 
+    /// i.e. lines[0] is the bottom line of the hexagram. 
+    lines: [Line; 6],
+    number: u8
+    //name, image, judgement, etc through lookup by number?
+}
+
+impl Hexagram {
+    /// Generates a random hexagram, with changing and static lines. 
+    /// Use to generate the present hexagram
+    fn generate_present(mut rng: &mut impl rand::Rng) -> Self {
+        let lines: [Line; 6] = (0..6).map(|_| {Line::generate(&mut rng)}).collect::<Vec<_>>().try_into().unwrap();
+        //TODO lookup number
+        Hexagram{lines, number: 0}
+    }
+
+    /// Returns a vector of the changing lines. 
+    /// Indexes are in the traditional I Ching order, i.e. 
+    /// the first line generated is the bottom line is 1, 
+    /// the top line is 6 which is the last line that was generated.
+    fn get_changing_lines(&self) -> Vec<u8> {
+        self.lines.iter().enumerate()
+            .filter_map(|(i, line)| {
+                if line.is_changing() { Some((i+1) as u8)} else {None}
+            }).collect()
+    }
+
+    /// Given a "present" hexagram, return the future hexagram
+    /// (with all changing lines changed)
+    fn change(&self) -> Option<Hexagram> {
+        if self.get_changing_lines().is_empty() {
+            return None;
+        }
+
+        let future_lines: [Line; 6] = self.lines.iter()
+            .map(|line| line.change_line())
+            .collect::<Vec<_>>().try_into().unwrap();
+
+        // TODO lookup number
+        Some(Hexagram{lines: future_lines, number:0})
+    }
+
+}
+
+impl fmt::Display for Hexagram {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        for (i,line) in self.lines.iter().rev().enumerate() {
+            let line_num = 6-i;
+            write!(f, "{} {}\n", line_num, line)?;
+        }
+
+        //TODO name, image, judgement, etc
+
+        Ok(())
+    }
+}
+
+
+#[derive(Debug)]
 struct Divination {
-    lines: [Line; 6]
+    present_hexagram: Hexagram,
+    future_hexagram: Option<Hexagram>
 }
 
 impl Divination {
     // the result is locked in on creation, much like your own fate in real life
     fn new() -> Self {
         let mut rng = rand::rng();
-        let lines: [Line; 6] = (0..6).map(|_| {Line::generate(&mut rng)}).collect::<Vec<_>>().try_into().unwrap();
+        let present_hexagram = Hexagram::generate_present(&mut rng);
+        let future_hexagram = present_hexagram.change();
 
-        //let cointoss = rng.random_bool(0.5);        
-        Divination {lines} 
+        Divination {present_hexagram, future_hexagram} 
     }
 }
 
 impl fmt::Display for Divination {
-    // emit text for initial line draw
+    // show present, show changes, show future
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        for (i,line) in self.lines.iter().rev().enumerate() {
-            let line_num = 6-i;
-            write!(f, "{} {}\n", line_num, line)?;
+        write!(f, "{}\n", &self.present_hexagram)?;
+
+        if let Some(future) = &self.future_hexagram {
+            write!(f, "-- changing to -- \n{}", future)?;
+        } else {
+            write!(f, "-- unchanging --\n")?;
         }
 
         Ok(())

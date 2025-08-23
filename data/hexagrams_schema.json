@@ -1,0 +1,176 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "I Ching Hexagram Data",
+  "description": "Complete translation data for all 64 I Ching hexagrams",
+  "type": "object",
+  "properties": {
+    "hexagrams": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "king_wen_number": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 64,
+            "description": "Traditional King Wen sequence number (1-64)"
+          },
+          "fu_xi_number": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 63,
+            "description": "Binary sequence number (0-63), useful for lookup"
+          },
+          "name": {
+            "type": "object",
+            "properties": {
+              "english": {
+                "type": "string",
+                "description": "English name of the hexagram"
+              },
+              "chinese": {
+                "type": "string",
+                "description": "Chinese name in simplified characters"
+              },
+              "pinyin": {
+                "type": "string",
+                "description": "Pinyin romanization"
+              },
+              "wade_giles": {
+                "type": "string",
+                "description": "Wade-Giles romanization (traditional)"
+              }
+            },
+            "required": ["english"],
+            "additionalProperties": false
+          },
+          "trigrams": {
+            "type": "object",
+            "properties": {
+              "upper": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "English name of upper trigram"
+                  },
+                  "element": {
+                    "type": "string",
+                    "description": "Associated element or nature"
+                  }
+                },
+                "required": ["name"],
+                "additionalProperties": false
+              },
+              "lower": {
+                "type": "object",
+                "properties": {
+                  "name": {
+                    "type": "string",
+                    "description": "English name of lower trigram"
+                  },
+                  "element": {
+                    "type": "string",
+                    "description": "Associated element or nature"
+                  }
+                },
+                "required": ["name"],
+                "additionalProperties": false
+              }
+            },
+            "required": ["upper", "lower"],
+            "additionalProperties": false
+          },
+          "image": {
+            "type": "string",
+            "description": "The Image (Xiang) - symbolic description of the hexagram"
+          },
+          "judgement": {
+            "type": "string",
+            "description": "The Judgement (Tuan) - overall meaning and advice"
+          },
+          "commentary": {
+            "type": "object",
+            "properties": {
+              "image": {
+                "type": "string",
+                "description": "Commentary on the Image"
+              },
+              "judgement": {
+                "type": "string",
+                "description": "Commentary on the Judgement"
+              }
+            },
+            "additionalProperties": false
+          },
+          "lines": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "position": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 6,
+                  "description": "Line position (1=bottom, 6=top)"
+                },
+                "type": {
+                  "type": "string",
+                  "enum": ["yin", "yang"],
+                  "description": "Line type in this hexagram"
+                },
+                "text": {
+                  "type": "string",
+                  "description": "Text for when this line is changing"
+                },
+                "commentary": {
+                  "type": "string",
+                  "description": "Commentary on the changing line"
+                }
+              },
+              "required": ["position", "type", "text"],
+              "additionalProperties": false
+            },
+            "minItems": 6,
+            "maxItems": 6
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "description": "Key concepts and themes"
+          },
+          "sequence_notes": {
+            "type": "string",
+            "description": "Notes about this hexagram's position in the sequence"
+          }
+        },
+        "required": ["king_wen_number", "name", "trigrams", "image", "judgement", "lines"],
+        "additionalProperties": false
+      },
+      "minItems": 64,
+      "maxItems": 64
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "translation_source": {
+          "type": "string",
+          "description": "Source of the translation (e.g., 'Wilhelm/Baynes', 'Legge', 'Blofeld')"
+        },
+        "version": {
+          "type": "string",
+          "description": "Version of this translation data"
+        },
+        "notes": {
+          "type": "string",
+          "description": "General notes about this translation"
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": ["hexagrams"],
+  "additionalProperties": false
+}

@@ -144,7 +144,7 @@ impl Hexagram {
                 };
                 acc | (bit << i)
         });
-        binary_num + 1 // range 1-64
+        binary_num // range 0-7 for direct array indexing
     }
 
     const TRIGRAMS: [&str;8] = [
@@ -272,9 +272,9 @@ impl Hexagram {
 impl fmt::Display for Hexagram {
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "HEXAGRAM {} : \n", self.king_wen_number)?;
-        let lower_trigram = Hexagram::calculate_trigram(&self.lines[0..2]);
+        let lower_trigram = Hexagram::calculate_trigram(&self.lines[0..3]);
 
-        let upper_trigram = Hexagram::calculate_trigram(&self.lines[3..5]);
+        let upper_trigram = Hexagram::calculate_trigram(&self.lines[3..6]);
 
         for (i,line) in self.lines.iter().rev().enumerate() {
             let line_num = 6-i;
@@ -384,5 +384,184 @@ fn main() {
 
     let div = Divination::new();
     println!("{}",div);
+
+}
+
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use rand::rngs::mock::StepRng;
+
+    #[test]
+    fn test_line_generation_known_values() {
+        // Create a custom RNG that returns specific boolean values
+        struct MockRng {
+            values: Vec<bool>,
+            index: usize,
+        }
+        
+        impl rand::RngCore for MockRng {
+            fn next_u32(&mut self) -> u32 {
+                if self.index < self.values.len() {
+                    let val = if self.values[self.index] { 1 } else { 0 };
+                    self.index += 1;
+                    val
+                } else {
+                    0
+                }
+            }
+            
+            fn next_u64(&mut self) -> u64 {
+                self.next_u32() as u64
+            }
+            
+            fn fill_bytes(&mut self, dest: &mut [u8]) {
+                for byte in dest.iter_mut() {
+                    *byte = self.next_u32() as u8;
+                }
+            }
+            
+        }
+        
+        impl rand::Rng for MockRng {
+            fn random_bool(&mut self, _p: f64) -> bool {
+                if self.index < self.values.len() {
+                    let val = self.values[self.index];
+                    self.index += 1;
+                    val
+                } else {
+                    false
+                }
+            }
+        }
+        
+        // Test 3 tails (false) = sum 6 = ChangingYin
+        let mut rng = MockRng { values: vec![false, false, false], index: 0 };
+        let line = Line::generate(&mut rng);
+        assert!(matches!(line, Line::ChangingYin)); // 3 tails = 6
+        
+        // Test 3 heads (true) = sum 9 = ChangingYang
+        let mut rng = MockRng { values: vec![true, true, true], index: 0 };
+        let line = Line::generate(&mut rng);
+        assert!(matches!(line, Line::ChangingYang)); // 3 heads = 9
+    }
+
+    #[test]
+    fn test_line_change() {
+        assert_eq!(matches!(Line::ChangingYin.change_line(), Line::StaticYang), true);
+        assert_eq!(matches!(Line::ChangingYang.change_line(), Line::StaticYin), true);
+        assert_eq!(matches!(Line::StaticYin.change_line(), Line::StaticYin), true);
+        assert_eq!(matches!(Line::StaticYang.change_line(), Line::StaticYang), true);
+    }
+
+    #[test]
+    fn test_line_get_aspect() {
+        assert!(matches!(Line::ChangingYang.get_aspect(), Aspect::Yang));
+        assert!(matches!(Line::StaticYang.get_aspect(), Aspect::Yang));
+        assert!(matches!(Line::ChangingYin.get_aspect(), Aspect::Yin));
+        assert!(matches!(Line::StaticYin.get_aspect(), Aspect::Yin));
+    }
+
+    #[test]
+    fn test_line_display() {
+        assert_eq!(format!("{}", Line::StaticYang), "---------");
+        assert_eq!(format!("{}", Line::StaticYin), "---   ---");
+        assert_eq!(format!("{}", Line::ChangingYang), "----o----");
+        assert_eq!(format!("{}", Line::ChangingYin), "--- x ---");
+    }
+
+    #[test]
+    fn test_hexagram_calculate_number() {
+        // Test Hexagram 1 (Qian - all yang lines)
+        let all_yang = [Line::StaticYang; 6];
+        assert_eq!(Hexagram::calculate_number(&all_yang), 1);
+        // Test Hexagram 2 (Kun - all yin lines)
+        let all_yin = [Line::StaticYin; 6];
+        assert_eq!(Hexagram::calculate_number(&all_yin), 2);
+        // that's probably good enough lmao
+    }
+
+    #[test]
+    fn test_hexagram_change_with_changing_lines() {
+        let lines = [
+            Line::StaticYin,      // stays yin
+            Line::ChangingYang,   // becomes yin
+            Line::StaticYang,     // stays yang
+            Line::ChangingYin,    // becomes yang
+            Line::StaticYin,      // stays yin
+            Line::StaticYang,     // stays yang
+        ];
+        let hexagram = Hexagram {
+            lines,
+            king_wen_number: 1,
+        };
+        
+        let future = hexagram.change().unwrap();
+        assert_eq!(matches!(future.lines[1], Line::StaticYin), true);
+        assert_eq!(matches!(future.lines[3], Line::StaticYang), true);
+    }
+
+    #[test]
+    fn test_hexagram_change_no_changing_lines() {
+        let lines = [Line::StaticYin, Line::StaticYang, Line::StaticYin, 
+                     Line::StaticYang, Line::StaticYin, Line::StaticYang];
+        let hexagram = Hexagram {
+            lines,
+            king_wen_number: 1,
+        };
+        
+        assert!(hexagram.change().is_none());
+    }
+
+    #[test]
+    fn test_calculate_trigram() {
+        // Test Earth trigram (000)
+        let earth_lines = [Line::StaticYin, Line::StaticYin, Line::StaticYin];
+        assert_eq!(Hexagram::calculate_trigram(&earth_lines), 0);
+        
+        // Test Heaven trigram (111) 
+        let heaven_lines = [Line::StaticYang, Line::StaticYang, Line::StaticYang];
+        assert_eq!(Hexagram::calculate_trigram(&heaven_lines), 7);
+    }
+
+    #[test]
+    fn test_divination_display() {
+        // Create a test hexagram with known lines
+        let lines = [
+            Line::StaticYin,      // bottom line (1)
+            Line::ChangingYang,   // line 2
+            Line::StaticYang,     // line 3
+            Line::ChangingYin,    // line 4
+            Line::StaticYin,      // line 5
+            Line::StaticYang,     // top line (6)
+        ];
+        let present_hexagram = Hexagram {
+            lines,
+            king_wen_number: 42,
+        };
+        
+        // Create future hexagram by changing the lines
+        let future_hexagram = present_hexagram.change();
+        
+        let divination = Divination {
+            present_hexagram,
+            future_hexagram,
+        };
+        
+        let display_output = format!("{}", divination);
+        
+        // Check that the output contains expected elements
+        assert!(display_output.contains("HEXAGRAM 42"));
+        assert!(display_output.contains("line 2 -")); // changing line
+        assert!(display_output.contains("line 4 -")); // changing line
+        assert!(display_output.contains("-- changing to --"));
+        
+        // Check that trigram names are displayed correctly
+        // Lower trigram: lines 0-2 = Yin,Yang,Yang = 011 binary = 3 = "Lake"
+        // Upper trigram: lines 3-5 = Yin,Yin,Yang = 100 binary = 1 = "Thunder"
+        assert!(display_output.contains("Thunder over Lake"));
+    }
+
 
 }

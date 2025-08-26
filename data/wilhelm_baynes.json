@@ -2302,6 +2302,44 @@
       },
       "image": "Wind comes forth from fire: the image of the Family. Thus the superior man has substance in his words and duration in his way of life.",
       "judgement": "The Family. The perseverance of the woman furthers.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "Firm seclusion within the family. Remorse disappears.",
+          "commentary": "Establishing clear boundaries and proper roles within the family prevents problems and regrets."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "She should not follow her whims. She must attend within to the food. Perseverance brings good fortune.",
+          "commentary": "The woman's role in maintaining the household through careful attention to domestic duties."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "When the family is too strict, there are remorse and danger, but good fortune. When women and children dally and laugh, it leads in the end to humiliation.",
+          "commentary": "Balance between excessive strictness and permissiveness; proper discipline prevents future shame."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "She is the treasure of the house. Great good fortune.",
+          "commentary": "A woman who fulfills her proper role becomes the foundation of family prosperity."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "As a king he approaches his family. Fear not. Good fortune.",
+          "commentary": "Leadership in the family should be benevolent and worthy, inspiring respect rather than fear."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "His work commands respect. In the end good fortune comes.",
+          "commentary": "Personal integrity and worthy conduct eventually earn respect and bring lasting benefit to the family."
+        }
+      ],
       "keywords": ["family", "household", "relationships", "roles", "tradition"],
       "sequence_notes": "Thirty-seventh hexagram concerning proper family relationships and domestic harmony"
     },
@@ -2326,6 +2364,44 @@
       },
       "image": "Above, fire; below, the lake: the image of Opposition. Thus amid all fellowship the superior man retains his individuality.",
       "judgement": "Opposition. In small matters, good fortune.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "Remorse disappears. If you lose your horse, do not run after it; it will come back of its own accord. When you see evil people, guard yourself against mistakes.",
+          "commentary": "In opposition, remaining calm and vigilant prevents loss and attracts what belongs to you naturally."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "One meets his lord in a narrow street. No blame.",
+          "commentary": "Unexpected encounters in difficult circumstances can lead to understanding despite opposition."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "One sees the wagon dragged back, the oxen halted, a man's hair and nose cut off. Not a good beginning, but a good end.",
+          "commentary": "Initial setbacks and humiliations in opposition eventually lead to better outcomes."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "Isolated through opposition, one meets a like-minded man with whom one can associate in good faith. Despite the danger, no blame.",
+          "commentary": "Finding allies with shared values overcomes isolation and creates trustworthy partnerships."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Remorse disappears. The companion bites his way through the wrappings. If one goes to him, how could it be a mistake?",
+          "commentary": "A trusted friend breaks through barriers of opposition; seeking their help brings success."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "Isolated through opposition, one sees one's companion as a pig covered with dirt, as a wagon full of devils. First one draws a bow against him, then one lays the bow aside. He is not a robber; he will woo at the right time. As one goes, rain falls, and good fortune comes.",
+          "commentary": "Misunderstandings in opposition dissolve when truth becomes clear, leading to reconciliation and blessing."
+        }
+      ],
       "keywords": ["opposition", "conflict", "differences", "individuality", "small matters"],
       "sequence_notes": "Thirty-eighth hexagram about dealing with opposition and maintaining individual identity"
     },
@@ -2350,6 +2426,44 @@
       },
       "image": "Water on the mountain: the image of Obstruction. Thus the superior man turns his attention to himself and molds his character.",
       "judgement": "Obstruction. The southwest furthers. The northeast does not further. It furthers one to see the great man. Perseverance brings good fortune.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Going leads to obstruction; coming meets with praise.",
+          "commentary": "In times of obstacle, retreat and reflection bring better results than pushing forward."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "The king's servant is beset by obstruction upon obstruction, but it is not his own fault.",
+          "commentary": "Facing multiple obstacles while serving a higher purpose; difficulties are not due to personal failing."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "Going leads to obstruction; hence he comes back.",
+          "commentary": "Recognizing when to retreat from obstacles shows wisdom and prevents greater difficulties."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Going leads to obstruction, coming leads to union.",
+          "commentary": "Individual efforts meet obstacles, but joining with others creates opportunities for success."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "In the midst of the greatest obstructions, friends come.",
+          "commentary": "At the peak of difficulties, help arrives from unexpected sources and loyal companions."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Going leads to obstruction, coming leads to great good fortune. It furthers one to see the great man.",
+          "commentary": "After enduring obstacles, return brings exceptional success; seeking wise guidance is beneficial."
+        }
+      ],
       "keywords": ["obstruction", "difficulty", "self-improvement", "obstacles", "perseverance"],
       "sequence_notes": "Thirty-ninth hexagram teaching how to handle obstacles through self-cultivation and seeking wise guidance"
     },
@@ -2374,6 +2488,44 @@
       },
       "image": "Thunder and rain set in: the image of Deliverance. Thus the superior man pardons mistakes and forgives misdeeds.",
       "judgement": "Deliverance. The southwest furthers. If there is no longer anything where one has to go, return brings good fortune. If there is still something where one has to go, hastening brings good fortune.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Without blame.",
+          "commentary": "In deliverance, being free of complications and remaining uninvolved prevents problems."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "One kills three foxes in the field and receives a yellow arrow. Perseverance brings good fortune.",
+          "commentary": "Eliminating deceitful elements and receiving recognition for righteousness through persistent effort."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "If a man carries a burden on his back and nonetheless rides in a carriage, he thereby encourages robbers to draw near. Perseverance leads to humiliation.",
+          "commentary": "Inappropriate behavior that shows both humility and pride invites trouble and eventual shame."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "Deliver yourself from your great toe. Then the companion comes, and him you can trust.",
+          "commentary": "Breaking free from inferior associations allows trustworthy relationships to develop."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "If only the superior man can deliver himself, it brings good fortune. Thus he proves to inferior men that he is in earnest.",
+          "commentary": "The wise person's ability to free themselves demonstrates sincerity and inspires others."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "The prince shoots at a hawk on a high wall. He kills it. Everything serves to further.",
+          "commentary": "Decisive action against harmful influences from a position of authority brings complete success."
+        }
+      ],
       "keywords": ["deliverance", "liberation", "forgiveness", "release", "resolution"],
       "sequence_notes": "Fortieth hexagram representing release from difficulties and the wisdom of forgiveness"
     },
@@ -2398,6 +2550,44 @@
       },
       "image": "At the foot of the mountain, the lake: the image of Decrease. Thus the superior man controls his anger and restrains his instincts.",
       "judgement": "Decrease combined with sincerity brings about supreme good fortune without blame. One may be persevering in this. It furthers one to undertake something. How is this to be carried out? One may use two small bowls for the sacrifice.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "Going quickly when one's tasks are finished is without blame. But one must reflect on how much one may decrease others.",
+          "commentary": "Efficient completion allows help for others, but consider the impact of reducing their resources."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "Perseverance furthers. To undertake something brings misfortune. Without decreasing oneself, one is able to bring increase to others.",
+          "commentary": "Maintaining one's strength while helping others requires balance; self-sacrifice may actually harm everyone."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "When three people journey together, their number decreases by one. When one person journeys alone, he finds a companion.",
+          "commentary": "Too many conflicting opinions create problems, but solitary focus attracts the right partnerships."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "If a man decreases his faults, it makes the other hasten to come and rejoice. No blame.",
+          "commentary": "Personal improvement inspires others to join in positive change and celebration."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Someone does indeed increase him. Ten pairs of tortoises cannot oppose it. Supreme good fortune.",
+          "commentary": "Genuine decrease attracts inevitable increase that cannot be prevented by any obstacle."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "If one is increased without depriving others, there is no blame. Perseverance brings good fortune. It furthers one to undertake something. One obtains servants but no longer has a home.",
+          "commentary": "True increase that doesn't diminish others brings success and followers, though it may require sacrificing comfort."
+        }
+      ],
       "keywords": ["decrease", "reduction", "sacrifice", "simplicity", "restraint"],
       "sequence_notes": "Forty-first hexagram teaching the wisdom of voluntary decrease and simplicity"
     },
@@ -2422,6 +2612,44 @@
       },
       "image": "Wind and thunder: the image of Increase. Thus the superior man: if he sees good, he imitates it; if he has faults, he rids himself of them.",
       "judgement": "Increase. It furthers one to undertake something. It furthers one to cross the great water.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "It furthers one to accomplish great deeds. Supreme good fortune. No blame.",
+          "commentary": "When increase comes, using it for significant accomplishments brings the greatest benefit."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "Someone does indeed increase him; ten pairs of tortoises cannot oppose it. Constant perseverance brings good fortune. The king presents him before God. Good fortune.",
+          "commentary": "Genuine increase cannot be opposed and attracts divine recognition through persistent virtue."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "One is enriched through unfortunate events. No blame, if you are sincere and walk in the middle, and report with a seal to the prince.",
+          "commentary": "Learning and growing from misfortune creates value when approached with sincerity and proper protocol."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "If you walk in the middle and report to the prince, he will follow. It furthers one to be used in the removal of the capital.",
+          "commentary": "Balanced advice given to leadership will be heeded; trust in major decisions follows."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "If in truth you have a kind heart, ask not about the good fortune. All will go well with your virtue.",
+          "commentary": "Genuine kindness creates its own good fortune without needing to seek external validation."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "He brings increase to no one. Indeed, someone even strikes him. He does not keep his heart constantly steady. Misfortune.",
+          "commentary": "Selfishness and inconsistency prevent increase and invite conflict and loss."
+        }
+      ],
       "keywords": ["increase", "growth", "improvement", "benefit", "expansion"],
       "sequence_notes": "Forty-second hexagram representing beneficial increase and growth"
     },
@@ -2446,6 +2674,44 @@
       },
       "image": "The lake has risen up to heaven: the image of Breakthrough. Thus the superior man dispenses riches downward and refrains from resting on his virtue.",
       "judgement": "Breakthrough. One must resolutely make the matter known at the court of the king. It must be announced truthfully. Danger. It is necessary to notify one's own city. It does not further to resort to arms. It furthers one to undertake something.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "Mighty in the forward-striding toes. When one goes and is not equal to the task, one makes a mistake.",
+          "commentary": "Impulsive action without sufficient strength or preparation leads to error."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "A cry of alarm. Arms at evening and at night. Fear nothing.",
+          "commentary": "Vigilance and readiness ward off danger, but excessive fear is unnecessary."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "To be powerful in the cheekbones brings misfortune. The superior man is firmly resolved. He walks alone and is caught in the rain. He is bespattered, and people murmur against him. No blame.",
+          "commentary": "Righteous determination may face opposition and criticism, but brings no fault."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "There is no skin on his thighs, and walking comes hard. If a man were to let himself be led like a sheep, remorse would disappear. But if these words are heard, they will not be believed.",
+          "commentary": "Weakness and indecision create difficulty; following guidance helps, but may not be trusted."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "In dealing with weeds, firm resolution is necessary. Walking in the middle remains free of blame.",
+          "commentary": "Persistent effort and balanced approach overcome obstacles without fault."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "No cry. In the end misfortune comes.",
+          "commentary": "Failure to sound warning or take decisive action ultimately leads to misfortune."
+        }
+      ],
       "keywords": ["breakthrough", "resolution", "determination", "truth", "decisive action"],
       "sequence_notes": "Forty-third hexagram about decisive breakthrough and resolute action"
     },
@@ -2470,6 +2736,44 @@
       },
       "image": "Under heaven, wind: the image of Coming to Meet. Thus does the prince act when disseminating his commands and proclaiming them to the four quarters of heaven.",
       "judgement": "Coming to Meet. The maiden is powerful. One should not marry such a maiden.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "It must be checked with a brake of bronze. Perseverance brings good fortune. If one lets it take its course, one experiences misfortune. Even a lean pig has it in him to rage around.",
+          "commentary": "Evil influences must be firmly restrained from the beginning; even small things can cause great trouble if unchecked."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "There is a fish in the tank. No blame. Does not further guests.",
+          "commentary": "Controlling harmful influences privately is good, but one should not involve others in the process."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "There is no skin on his thighs, and walking comes hard. If one is mindful of the danger, no great mistake is made.",
+          "commentary": "Difficulty in movement and progress, but awareness of danger prevents serious error."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "No fish in the tank. This leads to misfortune.",
+          "commentary": "Losing control over negative influences leads to unfortunate consequences."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "A melon covered with willow leaves. Hidden lines. Then it drops down to one from heaven.",
+          "commentary": "Something valuable is hidden beneath plain appearances; fate will reveal it at the proper time."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "He comes to meet with his horns. Humiliation. No blame.",
+          "commentary": "Approaching challenges with aggression brings embarrassment but no lasting harm."
+        }
+      ],
       "keywords": ["meeting", "temptation", "seduction", "dangerous encounter", "caution"],
       "sequence_notes": "Forty-fourth hexagram warning about dangerous encounters and temptations"
     },
@@ -2494,6 +2798,44 @@
       },
       "image": "Over the earth, the lake: the image of Gathering Together. Thus the superior man renews his weapons in order to meet the unforeseen.",
       "judgement": "Gathering Together. Success. The king approaches his temple. It furthers one to see the great man. This brings success. Perseverance furthers. To bring great offerings creates good fortune. It furthers one to undertake something.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "If you are sincere, but not to the end, there will sometimes be confusion, sometimes gathering together. If you call out, then after one grasp of the hand you can laugh again. Regret not. Going is without blame.",
+          "commentary": "Inconsistent sincerity causes mixed results, but calling for help and accepting it brings relief."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "Letting oneself be drawn brings good fortune and remains blameless. If one is sincere, it furthers one to bring even a small offering.",
+          "commentary": "Allowing oneself to be guided toward unity is beneficial; even modest contributions are valuable."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "Gathering together amid sighs. Nothing that would further. Going is without blame. Slight humiliation.",
+          "commentary": "Reluctant participation in gathering brings no benefit, though leaving causes minor embarrassment."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Great good fortune. No blame.",
+          "commentary": "Being in the right position to facilitate gathering brings excellent results without fault."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "If in gathering together one has position, this brings no blame. If there are some who are not yet sincere in the work of gathering together, sublime and enduring perseverance is needed. Then remorse disappears.",
+          "commentary": "Leadership in gathering requires persistent effort to win over those who are not yet committed."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Lamenting and sighing, floods of tears. No blame.",
+          "commentary": "Genuine emotion and sorrow over difficulties in unity are natural and bring no fault."
+        }
+      ],
       "keywords": ["gathering", "assembly", "unity", "preparation", "collective action"],
       "sequence_notes": "Forty-fifth hexagram about gathering forces and collective preparation"
     },
@@ -2518,6 +2860,44 @@
       },
       "image": "Within the earth, wood grows: the image of Pushing Upward. Thus the superior man of devoted character heaps up small things in order to achieve something high and great.",
       "judgement": "Pushing Upward has supreme success. One must see the great man. Fear not. Departure toward the south brings good fortune.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Pushing upward that meets with confidence brings great good fortune.",
+          "commentary": "Gradual advancement that gains the trust of others leads to excellent results."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "If one is sincere, it furthers one to bring even a small offering. No blame.",
+          "commentary": "Genuine sincerity in modest efforts brings progress without fault."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "One pushes upward into an empty city.",
+          "commentary": "Advancement meets no resistance when the way is clear and open."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "The king offers him Mount Ch'i. Good fortune. No blame.",
+          "commentary": "Recognition and reward from authority bring honor without complications."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Perseverance brings good fortune. One pushes upward by steps.",
+          "commentary": "Steady persistence and gradual progress lead to lasting success."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Pushing upward in darkness. It furthers one to be unremittingly persevering.",
+          "commentary": "Advancement without clear direction requires unwavering determination."
+        }
+      ],
       "keywords": ["growth", "advancement", "gradual progress", "ambition", "effort"],
       "sequence_notes": "Forty-sixth hexagram representing gradual upward progress like a tree growing"
     },
@@ -2542,6 +2922,44 @@
       },
       "image": "There is no water in the lake: the image of Exhaustion. Thus the superior man stakes his life on following his will.",
       "judgement": "Oppression. Success. Perseverance. The great man brings about good fortune. No blame. When one has something to say, it is not believed.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "One sits oppressed under a bare tree and strays into a gloomy valley. For three years one sees nothing.",
+          "commentary": "Deep depression and isolation lead to prolonged periods of seeing no way forward."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "One is oppressed while at meat and drink. The man with the scarlet knee bands is just coming. It furthers one to offer sacrifice. To set forth brings misfortune. No blame.",
+          "commentary": "Even in comfort, oppression exists; help comes from unexpected sources, but action should be delayed."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "A man permits himself to be oppressed by stone, and leans on thorns and thistles. He enters his house and does not see his wife. Misfortune.",
+          "commentary": "Self-inflicted hardship and reliance on harmful things destroy even basic relationships."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "He comes very quietly, oppressed in a golden carriage. Humiliation, but the end is reached.",
+          "commentary": "Even those with wealth face oppression; humble acceptance leads to eventual resolution."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "His nose and feet are cut off. Oppression at the hands of the man with the purple knee bands. Joy comes slowly. It furthers one to offer sacrifice and libations.",
+          "commentary": "Severe oppression by those in authority; patience and spiritual practice eventually bring relief."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "He is oppressed by creeping vines. He moves unsteadily and says, 'Movement brings remorse.' If one feels remorse over this and makes a start, good fortune comes.",
+          "commentary": "Entanglement in difficulties causes uncertainty, but acknowledging mistakes and taking action brings success."
+        }
+      ],
       "keywords": ["oppression", "exhaustion", "adversity", "endurance", "inner strength"],
       "sequence_notes": "Forty-seventh hexagram about enduring oppression and finding inner resources"
     },
@@ -2566,6 +2984,44 @@
       },
       "image": "Water over wood: the image of the Well. Thus the superior man encourages the people at their work, and exhorts them to help one another.",
       "judgement": "The Well. The town may be changed, but the well cannot be changed. It neither decreases nor increases. They come and go and draw from the well. If one gets down almost to the water and the rope does not go all the way, or the jug breaks, it brings misfortune.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "One does not drink the mud of the well. No animals come to an old well.",
+          "commentary": "A source that has become polluted or neglected loses its usefulness and attracts nothing."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "At the wellhole one shoots fishes. The jug is broken and leaks.",
+          "commentary": "Misusing resources meant for nourishment leads to waste and destruction of the means."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "The well is cleaned, but no one drinks from it. This is my heart's sorrow, for one might draw from it. If the king were clear-minded, good fortune might be enjoyed in common.",
+          "commentary": "Good resources go unused due to lack of recognition; wise leadership could benefit everyone."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "The well is being lined. No blame.",
+          "commentary": "Improving and maintaining the source of nourishment is proper work that brings no fault."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "In the well there is a clear, cold spring from which one can drink.",
+          "commentary": "A pure source provides refreshment and nourishment that can be safely enjoyed."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "One draws from the well without hindrance. It is dependable. Supreme good fortune.",
+          "commentary": "A reliable source that flows freely brings the greatest benefit to all."
+        }
+      ],
       "keywords": ["well", "source", "nourishment", "community", "unchanging truth"],
       "sequence_notes": "Forty-eighth hexagram representing the unchanging source that nourishes the community"
     },
@@ -2590,6 +3046,44 @@
       },
       "image": "Fire in the lake: the image of Revolution. Thus the superior man sets the calendar in order and makes the seasons clear.",
       "judgement": "Revolution. On your own day you are believed. Supreme success, furthering through perseverance. Remorse disappears.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "Wrapped in the hide of a yellow cow. No blame.",
+          "commentary": "Restraint and patience during revolutionary times prevent premature action and blame."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "When one's own day comes, one may create revolution. Starting brings good fortune. No blame.",
+          "commentary": "When the time is right, taking initiative in creating change brings success without fault."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "Starting brings misfortune. Perseverance brings danger. When talk of revolution has gone the rounds three times, one may commit oneself, and men will have faith.",
+          "commentary": "Hasty revolution is dangerous; thorough preparation and consensus-building are necessary."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Remorse disappears. Men have faith in him. Changing the form of government brings good fortune.",
+          "commentary": "When people trust the leader, structural changes can be implemented successfully."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "The great man changes like a tiger. Even before he questions the oracle he is believed.",
+          "commentary": "A truly great leader's transformation is so powerful and authentic that it inspires immediate faith."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "The superior man changes like a panther. The inferior man molts in the face. Starting brings misfortune. To remain persevering brings good fortune.",
+          "commentary": "Noble people adapt gracefully to change, while lesser people only change superficially; patience is required."
+        }
+      ],
       "keywords": ["revolution", "change", "transformation", "renewal", "timing"],
       "sequence_notes": "Forty-ninth hexagram about revolutionary change and transformation"
     },
@@ -2614,6 +3108,44 @@
       },
       "image": "Fire over wood: the image of the Cauldron. Thus the superior man consolidates his fate by making his position correct.",
       "judgement": "The Cauldron. Supreme good fortune. Success.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "A ting with legs upturned. Furthers removal of stagnating stuff. One takes a concubine for the sake of her son. No blame.",
+          "commentary": "Overturning old patterns to clear away what is stagnant; unconventional means may serve good ends."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "There is food in the ting. My comrades are envious, but they cannot harm me. Good fortune.",
+          "commentary": "Having spiritual nourishment attracts jealousy, but inner substance provides protection."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "The handle of the ting is altered. One is impeded in his way of life. The fat of the pheasant is not eaten. Once rain falls, remorse is spent. Good fortune comes in the end.",
+          "commentary": "Changes in approach create temporary obstacles, but patience through difficulties brings eventual success."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "The legs of the ting are broken. The prince's meal is spilled and his person is soiled. Misfortune.",
+          "commentary": "Inadequate foundation causes collapse of important work, bringing disgrace to the responsible person."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "The ting has yellow handles, golden carrying rings. Perseverance furthers.",
+          "commentary": "Proper equipment and balanced approach make the work easier and more successful."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "The ting has rings of jade. Great good fortune. Nothing that would not act to further.",
+          "commentary": "The highest refinement and spiritual achievement benefit all endeavors and relationships."
+        }
+      ],
       "keywords": ["cauldron", "nourishment", "transformation", "culture", "refinement"],
       "sequence_notes": "Fiftieth hexagram representing cultural refinement and spiritual nourishment"
     },
@@ -2638,6 +3170,44 @@
       },
       "image": "Thunder repeated: the image of Shock. Thus in fear and trembling the superior man sets his life in order and examines himself.",
       "judgement": "Shock brings success. Shock comes—oh, oh! Laughing words—ha, ha! The shock terrifies for a hundred miles, and he does not let fall the sacrificial spoon and chalice.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "Shock comes—oh, oh! Then follow laughing words—ha, ha! Good fortune.",
+          "commentary": "The initial shock is followed by relief and laughter; the awakening brings good results."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "Shock comes bringing danger. A hundred thousand times you lose your treasures and must climb the nine hills. Do not go in pursuit of them. After seven days you will get them back again.",
+          "commentary": "Great disruption causes losses, but patient waiting rather than desperate pursuit will restore what was lost."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "Shock comes and makes one distraught. If shock spurs to action, one remains free of misfortune.",
+          "commentary": "Confusion from shock can be overcome by taking prompt, appropriate action."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "Shock is mired.",
+          "commentary": "The arousing force gets stuck and cannot move forward effectively."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Shock goes hither and thither. Danger. However, nothing at all is lost. Yet there are things to be done.",
+          "commentary": "Scattered movement creates danger but no real loss; focused effort is needed."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Shock brings ruin and terrified gazing around. Going ahead brings misfortune. If it has not yet touched one's own body but has reached one's neighbor first, there is no blame. Marriage partnerships bring humiliation.",
+          "commentary": "Excessive shock destroys peace; acting hastily makes things worse; learning from others' experience is wise."
+        }
+      ],
       "keywords": ["shock", "thunder", "awakening", "movement", "initiative"],
       "sequence_notes": "Fifty-first hexagram representing sudden shock that awakens and energizes"
     },
@@ -2662,6 +3232,44 @@
       },
       "image": "Mountains standing close together: the image of Keeping Still. Thus the superior man does not permit his thoughts to go beyond his situation.",
       "judgement": "Keeping Still. Keeping his back still so that he no longer feels his body. He goes into his courtyard and does not see his people. No blame.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Keeping his toes still. No blame. Continued perseverance furthers.",
+          "commentary": "Restraining the desire to move forward prevents mistakes; patience brings progress."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "Keeping his calves still. He cannot rescue him whom he follows. His heart is not glad.",
+          "commentary": "Forced stillness prevents helping others, causing inner conflict and unhappiness."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "Keeping his hips still. Making his sacrum stiff. Dangerous. The heart suffocates.",
+          "commentary": "Excessive rigidity in the center creates tension and emotional blockage."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Keeping his trunk still. No blame.",
+          "commentary": "Maintaining stillness of the core brings stability without fault."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "Keeping his jaws still. The words have order. Remorse disappears.",
+          "commentary": "Restraining speech and choosing words carefully eliminates regret."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Noblehearted keeping still. Good fortune.",
+          "commentary": "Stillness motivated by wisdom and virtue brings the highest success."
+        }
+      ],
       "keywords": ["stillness", "meditation", "rest", "contemplation", "tranquility"],
       "sequence_notes": "Fifty-second hexagram teaching the wisdom of knowing when to be still"
     },
@@ -2686,6 +3294,44 @@
       },
       "image": "On the mountain, a tree: the image of Development. Thus the superior man abides in dignity and virtue, in order to improve the mores.",
       "judgement": "Development. The maiden is given in marriage. Good fortune. Perseverance furthers.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "The wild goose gradually draws near the shore. The young son is in danger. There is talk. No blame.",
+          "commentary": "Initial stages of development face criticism and concern, but proceeding carefully brings no fault."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "The wild goose gradually draws near the cliff. Eating and drinking in peace and concord. Good fortune.",
+          "commentary": "Finding a secure position allows for sharing resources and enjoying harmony."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "The wild goose gradually draws near the plateau. The man goes forth and does not return. The woman carries a child but does not bring it forth. Misfortune. It furthers one to fight off robbers.",
+          "commentary": "Premature advancement leads to separation and unfulfilled potential; defense against harmful influences is needed."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "The wild goose gradually draws near the tree. Perchance it will find a flat branch. No blame.",
+          "commentary": "Patient searching finds a suitable resting place; adaptability prevents problems."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "The wild goose gradually draws near the summit. For three years the woman has no child. In the end nothing can hinder her. Good fortune.",
+          "commentary": "Reaching high position may bring temporary setbacks, but persistence ultimately succeeds."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "The wild goose gradually draws near the cloud heights. Its feathers can be used for the sacred dance. Good fortune.",
+          "commentary": "Achieving the highest development allows one to contribute to spiritual and cultural purposes."
+        }
+      ],
       "keywords": ["development", "gradual progress", "growth", "patience", "proper sequence"],
       "sequence_notes": "Fifty-third hexagram about gradual development and proper progression"
     },
@@ -2710,6 +3356,44 @@
       },
       "image": "Thunder over the lake: the image of the Marrying Maiden. Thus the superior man understands the transitory in the light of the eternity of the end.",
       "judgement": "The Marrying Maiden. Undertakings bring misfortune. Nothing that would further.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "The marrying maiden as a concubine. A lame man who is able to tread. Undertakings bring good fortune.",
+          "commentary": "Accepting a subordinate position humbly allows progress despite limitations."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "A one-eyed man who is able to see. The perseverance of a solitary man furthers.",
+          "commentary": "Limited perception is still valuable; maintaining principles alone brings benefit."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "The marrying maiden as a slave. She marries as a concubine.",
+          "commentary": "False expectations lead to accepting even lower status than anticipated."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "The marrying maiden draws out the allotted time. A late marriage comes in due time.",
+          "commentary": "Delaying until proper conditions exist leads to appropriate timing."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "The sovereign I gave his daughter in marriage. The embroidered garments of the princess were not as gorgeous as those of the servingmaid. The moon that is nearly full brings good fortune.",
+          "commentary": "True worth may be less flashy than appearance suggests; patient development brings success."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "The woman holds the basket, but there are no fruits in it. The man stabs the sheep, but no blood flows. Nothing that acts to further.",
+          "commentary": "Empty gestures and ineffective actions accomplish nothing worthwhile."
+        }
+      ],
       "keywords": ["marriage", "relationships", "improper unions", "subordination", "endings"],
       "sequence_notes": "Fifty-fourth hexagram warning about relationships based on desire rather than proper foundation"
     },
@@ -2734,6 +3418,44 @@
       },
       "image": "Both thunder and lightning come: the image of Abundance. Thus the superior man decides lawsuits and carries out punishments.",
       "judgement": "Abundance has success. The king attains abundance. Be not sad. Be like the sun at midday.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yang",
+          "text": "When a man meets his destined ruler, they can be together ten days, and it is not a mistake. Going meets with recognition.",
+          "commentary": "Meeting with the right person at the right time creates mutual benefit and recognition."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "The curtain is of such fullness that the polestars can be seen at noon. Through going one meets with mistrust and hate. If one rouses him through truth, good fortune comes.",
+          "commentary": "Excessive abundance can obscure clarity, creating suspicion; sincerity overcomes misunderstanding."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "The underbrush is of such abundance that the small stars can be seen at noon. He breaks his right arm. No blame.",
+          "commentary": "Overwhelming complexity impairs effectiveness and causes injury, but this is natural, not blameworthy."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "The curtain is of such fullness that the polestars can be seen at noon. He meets his ruler, who is of like mind. Good fortune.",
+          "commentary": "Abundance creates opportunities for meeting with like-minded leadership, bringing mutual success."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Lines are coming, blessing and fame draw near. Good fortune.",
+          "commentary": "Recognition and honor approach naturally as a result of previous efforts."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "His house is in a state of abundance. He screens off his family. He peers through the gate and no longer perceives anyone. For three years he sees nothing. Misfortune.",
+          "commentary": "Excessive protection and isolation in abundance leads to loss of connection and eventual misfortune."
+        }
+      ],
       "keywords": ["abundance", "prosperity", "fullness", "peak", "zenith"],
       "sequence_notes": "Fifty-fifth hexagram representing the peak of prosperity and abundance"
     },
@@ -2758,6 +3480,44 @@
       },
       "image": "Fire on the mountain: the image of the Wanderer. Thus the superior man is clear-minded and cautious in imposing penalties, and protracts no lawsuits.",
       "judgement": "The Wanderer. Success through smallness. Perseverance brings good fortune to the wanderer.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "If the wanderer busies himself with trivial things, he draws down misfortune upon himself.",
+          "commentary": "Engaging in petty concerns while traveling brings unnecessary trouble and complications."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "The wanderer comes to an inn. He has his property with him. He wins the steadfastness of a young servant.",
+          "commentary": "Finding proper accommodation and maintaining resources earns loyal assistance from others."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "The wanderer's inn burns down. He loses the steadfastness of his young servant. Danger. Perseverance brings misfortune.",
+          "commentary": "Carelessness destroys security and alienates supporters; stubborn persistence in wrong direction is dangerous."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "The wanderer rests in a shelter. He obtains his property and an ax. My heart is not glad.",
+          "commentary": "Finding temporary safety and tools provides security but little joy or satisfaction."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "He shoots a pheasant. It drops with the first arrow. In the end this brings both praise and office.",
+          "commentary": "Skillful action in the right moment leads to recognition and advancement."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "The bird's nest burns up. The wanderer laughs at first, then must needs lament and weep. Through carelessness he loses his cow. Misfortune.",
+          "commentary": "Initial success turns to loss through negligence; what seemed secure is destroyed by inattention."
+        }
+      ],
       "keywords": ["travel", "wandering", "stranger", "temporary", "modesty"],
       "sequence_notes": "Fifty-sixth hexagram about travel and being a stranger in foreign places"
     },
@@ -2782,6 +3542,44 @@
       },
       "image": "Winds following one upon the other: the image of the Gently Penetrating. Thus the superior man spreads his commands abroad and carries out his undertakings.",
       "judgement": "The Gentle. Success through what is small. It furthers one to have somewhere to go. It furthers one to see the great man.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "In advancing and in retreating, the perseverance of a warrior furthers.",
+          "commentary": "Gentle persistence combined with warrior-like determination achieves the goal through flexibility."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "Penetration under the bed. Priests and magicians are used in confusing number. Good fortune. No blame.",
+          "commentary": "Gentle influence reaches hidden places; seeking spiritual guidance through various means brings success."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "Repeated penetration. Humiliation.",
+          "commentary": "Excessive or repeated attempts at gentle influence become ineffective and embarrassing."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Remorse vanishes. During the hunt three kinds of game are caught.",
+          "commentary": "Past mistakes are overcome; patient effort yields multiple beneficial results."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "Perseverance brings good fortune. Remorse vanishes. Nothing that does not further. No beginning, but an end. Before the change, three days. After the change, three days. Good fortune.",
+          "commentary": "Steady persistence brings complete success; proper timing and preparation for change ensure good outcomes."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "Penetration under the bed. He loses his property and his ax. Perseverance brings misfortune.",
+          "commentary": "Excessive gentleness or hidden influence leads to loss of strength and resources; persistence in this brings misfortune."
+        }
+      ],
       "keywords": ["wind", "gentleness", "penetration", "influence", "persistence"],
       "sequence_notes": "Fifty-seventh hexagram representing gentle but persistent influence"
     },
@@ -2806,6 +3604,44 @@
       },
       "image": "Lakes resting one on the other: the image of the Joyous. Thus the superior man joins with his friends for discussion and practice.",
       "judgement": "The Joyous. Success. Perseverance is favorable.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Contented joyousness. Good fortune.",
+          "commentary": "Simple contentment and natural joy bring the best fortune without complications."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "Sincere joyousness. Good fortune. Remorse disappears.",
+          "commentary": "Genuine happiness based on sincerity brings lasting benefit and eliminates past regrets."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "Coming joyousness. Misfortune.",
+          "commentary": "Joy that comes from external sources or anticipation often leads to disappointment."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Joyousness that is weighed is not at peace. After ridding himself of mistakes a man has joy.",
+          "commentary": "Calculated joy lacks authenticity; true happiness comes after correcting past errors."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "Sincerity toward disintegrating influences is dangerous.",
+          "commentary": "Being open and trusting toward harmful or declining forces poses a real threat."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Seductive joyousness.",
+          "commentary": "Joy that seeks to entice or mislead others ultimately lacks substance and authenticity."
+        }
+      ],
       "keywords": ["joy", "lake", "pleasure", "serenity", "fellowship"],
       "sequence_notes": "Fifty-eighth hexagram representing joy and harmonious interaction"
     },
@@ -2830,6 +3666,44 @@
       },
       "image": "The wind drives over the water: the image of Dispersion. Thus the kings of old sacrificed to the Lord and built temples.",
       "judgement": "Dispersion. Success. The king approaches his temple. It furthers one to cross the great water. Perseverance furthers.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "He brings help with the strength of a horse. Good fortune.",
+          "commentary": "Providing strong assistance at the beginning of dissolution prevents greater problems."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "At the dissolution he hurries to that which supports him. Remorse disappears.",
+          "commentary": "When things fall apart, seeking reliable support eliminates regret and provides stability."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "He dissolves his self. No remorse.",
+          "commentary": "Dissolving ego and personal attachment removes obstacles and brings freedom from regret."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "He dissolves his bond with his group. Supreme good fortune. Dispersion leads in turn to accumulation. This is something that ordinary men do not think of.",
+          "commentary": "Breaking from limiting associations creates opportunities for higher gathering that most people cannot envision."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "His loud cries are as dissolving as sweat. Dissolution! A king abides without blame.",
+          "commentary": "Clear proclamation dissolves confusion like perspiration releases tension; leadership maintains integrity through change."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "He dissolves his blood. Departing, keeping at a distance, going out, is without blame.",
+          "commentary": "Dissolving even family bonds and departing completely can be necessary and blameless for spiritual development."
+        }
+      ],
       "keywords": ["dispersion", "dissolution", "scattering", "reunification", "spiritual gathering"],
       "sequence_notes": "Fifty-ninth hexagram about dispersal that leads to spiritual reunification"
     },
@@ -2854,6 +3728,44 @@
       },
       "image": "Water over lake: the image of Limitation. Thus the superior man creates number and measure, and examines the nature of virtue and correct conduct.",
       "judgement": "Limitation. Success. Galling limitation must not be persevered in.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Not going out of the door and the courtyard is without blame.",
+          "commentary": "Recognizing when to remain within safe bounds prevents problems and brings no fault."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "Not going out of the gate and the courtyard brings misfortune.",
+          "commentary": "Excessive limitation that prevents necessary action leads to missed opportunities and failure."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "He who knows no limitation will have cause to lament. No blame.",
+          "commentary": "Those who lack self-control will suffer the natural consequences, but this teaches necessary lessons."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Contented limitation. Success.",
+          "commentary": "Accepting appropriate limits with good grace brings satisfaction and achievement."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "Sweet limitation brings good fortune. Going brings esteem.",
+          "commentary": "Self-imposed limitation that feels natural and pleasant creates success and earns respect from others."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Galling limitation. Perseverance brings misfortune. Remorse disappears.",
+          "commentary": "Harsh or painful restrictions should not be endured indefinitely; releasing them eliminates regret."
+        }
+      ],
       "keywords": ["limitation", "moderation", "restraint", "economy", "regulation"],
       "sequence_notes": "Sixtieth hexagram teaching the importance of appropriate limitations and moderation"
     },
@@ -2878,6 +3790,44 @@
       },
       "image": "Wind over lake: the image of Inner Truth. Thus the superior man discusses criminal cases in order to delay executions.",
       "judgement": "Inner Truth. Pigs and fishes. Good fortune. It furthers one to cross the great water. Perseverance furthers.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "Being prepared brings good fortune. If there are secret designs, it is disquieting.",
+          "commentary": "Genuine preparation based on sincerity brings success, but hidden agendas create anxiety and problems."
+        },
+        {
+          "position": 2,
+          "type": "yang",
+          "text": "A crane calling in the shade. Its young answers it. I have a good goblet. I will share it with you.",
+          "commentary": "Authentic communication creates natural response; genuine good will is shared spontaneously with others."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "He finds a comrade. Now he beats the drum, now he stops. Now he sobs, now he sings.",
+          "commentary": "Finding connection leads to emotional extremes; inner truth creates both excitement and vulnerability."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "The moon nearly at the full. The team horse goes astray. No blame.",
+          "commentary": "Near completion, some deviation from the group path is natural and blameless."
+        },
+        {
+          "position": 5,
+          "type": "yang",
+          "text": "He possesses truth, which links together. No blame.",
+          "commentary": "Authentic truth creates genuine bonds and connections that bring no fault or complications."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "Cockcrow penetrating to heaven. Perseverance brings misfortune.",
+          "commentary": "Attempting to reach too high with limited abilities; persistence in the impossible brings misfortune."
+        }
+      ],
       "keywords": ["truth", "sincerity", "inner conviction", "influence", "understanding"],
       "sequence_notes": "Sixty-first hexagram about the power of inner truth and sincerity"
     },
@@ -2902,6 +3852,44 @@
       },
       "image": "Thunder on the mountain: the image of Preponderance of the Small. Thus in his conduct the superior man gives preponderance to reverence. In bereavement he gives preponderance to grief. In his expenditures he gives preponderance to thrift.",
       "judgement": "Preponderance of the Small. Success. Perseverance furthers. Small things may be done; great things should not be done. The flying bird brings the message: It is not well to strive upward, it is well to remain below. Great good fortune.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "The bird meets with misfortune through flying.",
+          "commentary": "Attempting to soar too high brings disaster; staying grounded is safer for small beings."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "She passes by her ancestor and meets her ancestress. He does not reach his prince and meets the official. No blame.",
+          "commentary": "Bypassing higher authority to work with appropriate intermediaries brings no fault."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "If one is not extremely careful, somebody may come up from behind and strike him. Misfortune.",
+          "commentary": "Inadequate caution leaves one vulnerable to unexpected attacks or setbacks."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "No blame. He does not pass by but meets him. Going brings danger. One must be on guard. Do not act. Be constantly persevering.",
+          "commentary": "Direct confrontation with higher powers is dangerous; constant vigilance and patience are required."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Dense clouds, no rain from our western region. The prince shoots and hits him who is in the cave.",
+          "commentary": "Preparation without results; focused effort can reach even hidden targets when conditions are right."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "He does not meet him. The flying bird leaves him. Misfortune. This means calamity and injury.",
+          "commentary": "Failure to make proper contact leads to loss of support and brings serious harm."
+        }
+      ],
       "keywords": ["small things", "humility", "caution", "attention to detail", "moderation"],
       "sequence_notes": "Sixty-second hexagram emphasizing the importance of small things and humble actions"
     },
@@ -2926,6 +3914,44 @@
       },
       "image": "Water over fire: the image of the condition after completion. Thus the superior man takes thought of the evil to come and arms himself against it in advance.",
       "judgement": "After Completion. Success in small matters. Perseverance furthers. At the beginning good fortune, at the end disorder.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "He brakes his wheels. He gets his tail in the water. No blame.",
+          "commentary": "Stopping progress at the right moment prevents going too far; a small setback brings no real harm."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "The woman loses the curtain of her carriage. Do not run after it; on the seventh day you will get it.",
+          "commentary": "Losing something important should not cause desperate pursuit; patience brings natural restoration."
+        },
+        {
+          "position": 3,
+          "type": "yang",
+          "text": "The Illustrious Ancestor disciplines the Devil's Country. After three years he conquers it. Inferior people must not be employed.",
+          "commentary": "Great undertakings require long, persistent effort and careful choice of helpers to achieve success."
+        },
+        {
+          "position": 4,
+          "type": "yang",
+          "text": "The finest clothes turn to rags. Be careful all day long.",
+          "commentary": "Even the best achievements can deteriorate quickly; constant vigilance is required to maintain success."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "The neighbor in the east who slaughters an ox does not attain as much real happiness as the neighbor in the west with his small offering.",
+          "commentary": "Sincere modest offerings bring more genuine joy than elaborate but empty displays."
+        },
+        {
+          "position": 6,
+          "type": "yin",
+          "text": "He gets his head in the water. Danger.",
+          "commentary": "Going too far after completion leads to serious peril; overconfidence becomes dangerous."
+        }
+      ],
       "keywords": ["completion", "achievement", "transition", "vigilance", "preparation"],
       "sequence_notes": "Sixty-third hexagram representing completion and the need for continued vigilance"
     },
@@ -2950,6 +3976,44 @@
       },
       "image": "Fire over water: the image of the condition before completion. Thus the superior man is careful in the differentiation of things, so that each finds its place.",
       "judgement": "Before Completion. Success. But if the little fox, after nearly completing the crossing, gets his tail in the water, there is nothing that would further.",
+      "lines": [
+        {
+          "position": 1,
+          "type": "yin",
+          "text": "He gets his tail in the water. Humiliation.",
+          "commentary": "Rushing ahead before proper preparation leads to embarrassment and setbacks."
+        },
+        {
+          "position": 2,
+          "type": "yin",
+          "text": "He brakes his wheels. Perseverance brings good fortune.",
+          "commentary": "Restraining forward momentum and waiting for the right time brings eventual success."
+        },
+        {
+          "position": 3,
+          "type": "yin",
+          "text": "Before completion, attack brings misfortune. It furthers one to cross the great water.",
+          "commentary": "Premature aggressive action fails, but taking on great challenges with proper preparation succeeds."
+        },
+        {
+          "position": 4,
+          "type": "yin",
+          "text": "Perseverance brings good fortune. Remorse disappears. Shock, in order to discipline the Devil's Country. For three years, great realms are awarded.",
+          "commentary": "Steady persistence eliminates regret; dramatic action to conquer difficulties brings long-term rewards."
+        },
+        {
+          "position": 5,
+          "type": "yin",
+          "text": "Perseverance brings good fortune. No remorse. The light of the superior man is true. Good fortune.",
+          "commentary": "Continued effort without regret, guided by authentic wisdom, brings complete success."
+        },
+        {
+          "position": 6,
+          "type": "yang",
+          "text": "There is drinking of wine in genuine confidence. No blame. But if one wets his head, he loses it, in truth.",
+          "commentary": "Celebrating success with genuine confidence is appropriate, but overindulgence leads to loss of what was gained."
+        }
+      ],
       "keywords": ["incompletion", "potential", "caution", "preparation", "new beginning"],
       "sequence_notes": "Sixty-fourth and final hexagram representing infinite potential and the eternal cycle of completion and new beginning"
     }

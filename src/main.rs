@@ -1,7 +1,10 @@
-//use rand::Rng;
+use rand::RngCore;
 use std::fmt;
 use std::fs;
 use std::vec;
+use std::collections::HashMap;
+use serde::{Deserialize, Serialize};
+use serde_json::Error;
 
 
 // A broken line is "yin" and a solid line is "yang"; lines may be either static (young) or moving (old)
@@ -228,19 +231,6 @@ impl Hexagram {
         1   // 111111 ☰☰ Qian (The Creative)
     ];
 
-    /*
-    /// maps the Fu Xi sequence number to the King Wen sequence number because it's not very calculable
-    const KING_WEN_SEQUENCE_MAP: [u8;64] = [
-        0,  // invalid
-        2,  // 000000 -> Hexagram 2 (The Receptive)
-        24, // 000001 -> Hexagram 24 (Return)
-        7,  // 000010 -> Hexagram 7 (The Army)
-        // ... all 64 mappings
-        1,  // 111111 -> Hexagram 1 (The Creative)
-
-    ];
-    */
-
     /// Returns a vector of the changing lines. 
     /// Indexes are in the traditional I Ching order, i.e. 
     /// the first line generated is the bottom line is 1, 
@@ -290,65 +280,122 @@ impl fmt::Display for Hexagram {
 }
 
 /// Each hexagram has some text associated with it - we load different translations from different files
-/// 
-/* 
-struct Translation {
-    kingwen_number: u8,
-    name: &String,
-    image: &String,
-    judgement: &str,
-    changing_lines: [&str;6]
+
+
+#[derive(Debug, Deserialize, Clone)]
+struct HexagramName {
+    english: String,
+    chinese: Option<String>,
+    pinyin: Option<String>,
+    wade_giles: Option<String>,
 }
 
+#[derive(Debug, Deserialize, Clone)]
+struct Trigram {
+    name: String,
+    element: Option<String>,
+}
 
-impl Translation {
-    /// vow: result will have 65 elements and index 0 doesn't count
-    fn init_translations(filename: &str) -> Result<Vec<Translation>, Box<dyn std::error::Error>>
-    {
-        let file_conts = fs::read_to_string(filename)?;
-        let mut tr_array: Vec<Translation> = Vec::new();
+#[derive(Debug, Deserialize, Clone)]
+struct Trigrams {
+    upper: Trigram,
+    lower: Trigram,
+}
 
-        // TODO: this file format sucks, replace with yaml or something
-        // CSV - King Wen number, name, image, judgement, line 1, line 2, line 3, line 4, line 5, line 6
-        // First line in file contains that header, following lines contain each hexagram (in Fu Xi order)
-        for (i, line) in file_conts.lines().enumerate() {
-            let fields: Vec<&str> = line.split(',').collect();
-            if (fields.len() != 10) {
-            
-            }
+#[derive(Debug, Deserialize, Clone)]
+struct Commentary {
+    image: Option<String>,
+    judgement: Option<String>,
+}
 
-            tr_array.push(Translation{
-                kingwen_number:fields[0].parse()?,
-                name:fields[1],
-                image: fields[2],
-                judgement: fields[3],
-                changing_lines: fields[4..10]});
+#[derive(Debug, Deserialize, Clone)]
+struct HexagramLine {
+    position: u8,
+    #[serde(rename = "type")]
+    line_type: String, // "yin" or "yang" 
+    text: String,
+    commentary: Option<String>,
+}
+
+#[derive(Debug, Deserialize, Clone)]
+struct HexagramData {
+    king_wen_number: u8,
+    fu_xi_number: Option<u8>,
+    name: HexagramName,
+    trigrams: Trigrams,
+    image: String,
+    judgement: String,
+    commentary: Option<Commentary>,
+    lines: Vec<HexagramLine>,
+    keywords: Option<Vec<String>>,
+    sequence_notes: Option<String>,
+}
+
+#[derive(Debug, Deserialize)]
+struct Metadata {
+    translation_source: Option<String>,
+    version: Option<String>,
+    notes: Option<String>,
+}
+
+#[derive(Debug, Deserialize)]
+struct IChingData {
+    hexagrams: Vec<HexagramData>,
+    metadata: Option<Metadata>,
+}
+
+// Error handling for JSON loading
+#[derive(Debug)]
+enum IChingError {
+    FileError(std::io::Error),
+    JsonError(serde_json::Error),
+    DataError(String),
+}
+
+impl fmt::Display for IChingError {
+    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+        match self {
+            IChingError::FileError(e) => write!(f, "File error: {}", e),
+            IChingError::JsonError(e) => write!(f, "JSON parsing error: {}", e),
+            IChingError::DataError(msg) => write!(f, "Data validation error: {}", msg),
         }
-
-        Ok(tr_array)
-
     }
 }
-*/
+impl std::error::Error for IChingError {}
 
-#[derive(Debug)]
-struct Divination {
-    present_hexagram: Hexagram,
-    future_hexagram: Option<Hexagram>
+impl From<std::io::Error> for IChingError {
+    fn from(error: std::io::Error) -> Self {
+        IChingError::FileError(error)
+    }
 }
 
-impl Divination {
+impl From<serde_json::Error> for IChingError {
+    fn from(error: serde_json::Error) -> Self {
+        IChingError::JsonError(error)
+    }
+}
+
+type IChingTranslation = HashMap<u8, HexagramData>;
+
+#[derive(Debug)]
+struct Divination<'tr> {
+    present_hexagram: Hexagram,
+    future_hexagram: Option<Hexagram>,
+    translation: &'tr IChingTranslation,
+}
+
+impl<'tr> Divination<'tr> {
     // the result is locked in on creation, much like your own fate in real life
-    fn new() -> Self {
+    fn new(translation: &'tr IChingTranslation) -> Self {
         let mut rng = rand::rng();
         let present_hexagram = Hexagram::generate_present(&mut rng);
         let future_hexagram = present_hexagram.change();
 
-        Divination {present_hexagram, future_hexagram} 
+        Divination {present_hexagram, future_hexagram, translation} 
     }
 }
 
-impl fmt::Display for Divination {
+impl<'tr> fmt::Display for Divination<'tr> {
     // show present, show changes, show future
     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
         write!(f, "{}\n", &self.present_hexagram)?;
@@ -373,8 +420,43 @@ impl fmt::Display for Divination {
     }
 }
 
+fn load_hexagram_data(filename: &str) -> Result<HashMap<u8, HexagramData>, IChingError> {
+    let iching_data: IChingData = serde_json::from_str(&fs::read_to_string(filename)?)?;
+
+    // Validate we have exactly 64 hexagrams
+    if iching_data.hexagrams.len() != 64 {
+        return Err(IChingError::DataError(
+            format!("Expected 64 hexagrams, found {}", iching_data.hexagrams.len())
+        ));
+    }
+
+    let mut hexagram_map = HashMap::new();
+    for hexagram in iching_data.hexagrams {
+        // Validate hexagram has 6 lines
+        if hexagram.lines.len() != 6 {
+            return Err(IChingError::DataError(
+                format!("Hexagram {} has {} lines, expected 6", 
+                       hexagram.king_wen_number, hexagram.lines.len())
+            ));
+        }
+        
+        // Validate King Wen number range
+        if hexagram.king_wen_number < 1 || hexagram.king_wen_number > 64 {
+            return Err(IChingError::DataError(
+                format!("Invalid King Wen number: {}", hexagram.king_wen_number)
+            ));
+        }
+        
+        hexagram_map.insert(hexagram.king_wen_number, hexagram);
+    }
+
+    Ok(hexagram_map)
+
+}
+
 fn main() {
-    //let wade_giles_translation = Translation::init_translations("wade_giles.csv");
+    //todo handle errors better
+    let wilhelm_baynes_translation = load_hexagram_data("data/wilhelm_baynes.json").expect("failed to read input file data/wilhelm_baynes.json");
 
     let mut input = String::new();
     
@@ -382,7 +464,7 @@ fn main() {
     
     std::io::stdin().read_line( &mut input).expect("something went wrong");
 
-    let div = Divination::new();
+    let div = Divination::new(&wilhelm_baynes_translation);
     println!("{}",div);
 
 }
@@ -404,7 +486,8 @@ mod tests {
         impl rand::RngCore for MockRng {
             fn next_u32(&mut self) -> u32 {
                 if self.index < self.values.len() {
-                    let val = if self.values[self.index] { 1 } else { 0 };
+                    // Return max value for true, 0 for false to make random_bool work correctly
+                    let val = if self.values[self.index] { u32::MAX } else { 0 };
                     self.index += 1;
                     val
                 } else {
@@ -424,17 +507,6 @@ mod tests {
             
         }
         
-        impl rand::Rng for MockRng {
-            fn random_bool(&mut self, _p: f64) -> bool {
-                if self.index < self.values.len() {
-                    let val = self.values[self.index];
-                    self.index += 1;
-                    val
-                } else {
-                    false
-                }
-            }
-        }
         
         // Test 3 tails (false) = sum 6 = ChangingYin
         let mut rng = MockRng { values: vec![false, false, false], index: 0 };

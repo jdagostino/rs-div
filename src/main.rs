@@ -253,8 +253,8 @@ impl Hexagram {
 }
 
 impl Hexagram {
-    fn to_string(&self) -> String {
-        let mut result = format!("HEXAGRAM {} : \n", self.king_wen_number);
+    fn to_string(&self, translation: &IChingTranslation) -> String {
+        let mut result = format!("HEXAGRAM {}: {} \n", self.king_wen_number, translation[&self.king_wen_number].name.english);
         let lower_trigram = Hexagram::calculate_trigram(&self.lines[0..3]);
         let upper_trigram = Hexagram::calculate_trigram(&self.lines[3..6]);
 
@@ -265,7 +265,8 @@ impl Hexagram {
 
         result.push_str(&format!("{} over {}\n", Hexagram::TRIGRAMS[upper_trigram], Hexagram::TRIGRAMS[lower_trigram]));
 
-        //TODO name, image, judgement, etc
+        result.push_str(&format!("THE JUDGEMENT\n{}\n\n", translation[&self.king_wen_number].judgement));
+        result.push_str(&format!("THE IMAGE\n{}\n\n", translation[&self.king_wen_number].image));
 
         result
     }
@@ -389,20 +390,19 @@ impl<'tr> Divination<'tr> {
 impl<'tr> Divination<'tr> {
     // show present, show changes, show future
     fn to_string(&self) -> String {
-        let mut result = format!("{}\n", self.present_hexagram.to_string());
+        // pass the translation object to the to_string function
+        let mut result = format!("{}\n", self.present_hexagram.to_string(&self.translation));
 
-        // look some stuff up now
-        // we look up by the Fu Xi number because we're in a computer, 
-        // but display the King Wen number because it's traditional
 
+        // print changing lines
         for index in &self.present_hexagram.get_changing_lines() {
-            result.push_str(&format!("line {} - {}\n", index, ""));
+            result.push_str(&format!("Line {}: {}\n\n", index, &self.translation[&self.present_hexagram.king_wen_number].lines[(*index - 1) as usize].text));
         }
 
         // todo special case of hex 1 -> 64 and vice versa
 
         if let Some(future) = &self.future_hexagram {
-            result.push_str(&format!("-- changing to -- \n{}", future.to_string()));
+            result.push_str(&format!("-- changing to -- \n{}", future.to_string(&self.translation)));
         } else {
             result.push_str("-- unchanging --\n");
         }
